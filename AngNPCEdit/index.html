@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="pennprojedit">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+		<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.1.0.js"></script>
+		<script src="NPCs.js"></script>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div ng-controller="TableEditor">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>NPC Name</th>
+						<th>Hit Points</th>
+						<th>Health</th>
+						<th>Total Moves</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="npc in NPCs">
+						<td>{{npc.name}}</td>
+						<td>{{npc.hitPoints}}</td>
+						<td>{{npc.health}}</td>
+						<td>{{npc.totalMoves}}</td>
+						<td>
+						<button class="btn btn-small" ng-click="edit(npc)">
+							Edit
+						</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<button class="btn btn-large" onclick="parent.location='SpecRunner.NPCs.html'">Unit Tests</button>
+	</body>
+</html>
