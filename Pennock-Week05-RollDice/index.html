@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html ng-app>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>Pennock-Week05-RollDice</title>
+        <script src="angular.js"></script>
+        <script src="index.js"></script>
+		<link href="index.css" media="all" rel="stylesheet" type="text/css" />
+   </head>
+    <body>
+        <h1>Pennock-Week05-RollDice</h1>
+        
+        <div ng-controller="diceController">
+            <div class="divArea">
+	            <h2 class="divInlineBlock"><strong>{{hintD6}}</strong></h2>
+	            <button class="divInlineBlock" ng-click='rollD6()'>Roll D6 Dice</button>
+	            <h3 class="divInlineBlock">dice rolled = </h3>
+	            <div class="divInlineBlock">{{totalD6}}</div>
+            </div>
+            <div class="divArea">
+	            <h2 class="divInlineBlock"><strong>{{hint2D6}}</strong></h2>
+	            <button class="divInlineBlock" ng-click='roll2D6()'>Roll D6 Dice</button>
+	            <h3 class="divInlineBlock">2 dice rolled(</h3>
+	            <div class="divInlineBlock" ng-repeat="roll in x2D6Rolls">{{roll}}&nbsp;</div>
+	            <h3 class="divInlineBlock">)</h3>
+	            <div class="divInlineBlock">&nbsp;=&nbsp;{{total2D6}}</div>
+            </div>
+            <div class="divArea">
+	            <h2 class="divInlineBlock"><strong>{{hint3D6}}</strong></h2>
+	            <button class="divInlineBlock" ng-click='roll3D6()'>Roll D6 Dice</button>
+	            <h3 class="divInlineBlock">3 dice rolled(</h3>
+	            <div class="divInlineBlock" ng-repeat="roll in x3D6Rolls">{{roll}}&nbsp;</div>
+	            <h3 class="divInlineBlock">)</h3>
+	            <div class="divInlineBlock">&nbsp;=&nbsp;{{total3D6}}</div>
+            </div>
+            <div class="divArea">
+	            <h2 class="divInlineBlock"><strong>{{hintD4}}</strong></h2>
+	            <button class="divInlineBlock" ng-click='rollD4()'>Roll D4 Dice</button>
+	            <h3 class="divInlineBlock">dice rolled = </h3>
+	            <div class="divInlineBlock">{{totalD4}}</div>
+            </div>
+            <div class="divArea">
+	            <h2 class="divInlineBlock"><strong>{{hintD10}}</strong></h2>
+	            <button class="divInlineBlock" ng-click='rollD10()'>Roll D10 Dice</button>
+	            <h3 class="divInlineBlock">dice rolled = </h3>
+	            <div class="divInlineBlock">{{totalD10}}</div>
+            </div>
+            <div class="divArea">
+	            <h2 class="divInlineBlock"><strong>{{hintD20}}</strong></h2>
+	            <button class="divInlineBlock" ng-click='rollD20()'>Roll D20 Dice</button>
+	            <h3 class="divInlineBlock">dice rolled = </h3>
+	            <div class="divInlineBlock">{{totalD20}}</div>
+            </div>
+            
+            <div class="divArea">
+	            <h2>{{arbHint}}</h2>
+	            <input type="number" ng-model="arbNumDice" />
+	            <input type="number" ng-model="arbFaces" />
+	            <p class="divInlineBlock">&nbsp;=&nbsp;</p>
+	            <h2 class="divInlineBlock"><strong>{{arbNumDice}}d{{arbFaces}}</strong></h2>
+	            <button class="divInlineBlock" ng-click='rollArbitrary()'>Roll Dice</button>
+	            <h3 class="divInlineBlock">{{arbNumDice}} dice rolled(</h3>
+	            <div class="divInlineBlock" ng-repeat="roll in arbRolls">{{roll}}&nbsp;</div>
+	            <h3 class="divInlineBlock">)</h3>
+	            <h2 class="divInlineBlock">&nbsp;=&nbsp;{{arbTotal}}</h2>
+            </div>
+        </div>
+		<button><a href="./Test01.html">Unit Tests</a></button>
+    </body>
+</html>
