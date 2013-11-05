@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Modules v05</title>
+        <script src="angular.js"></script>             
+        <script src="Boats\Main.js"></script>
+        <script src="Boats\Boat.js"></script>
+        <script src="Boats\SailBoat.js"></script>
+        <script src="Trains\SantaFe.js"></script>
+        <script src="Trains\SouthernPacific.js"></script>
+        <script src="Module01.js"></script>
+    </head>
+    <body>
+        <h1>Angular Modules - Boats and Trains</h1>
+        
+        <div ng-controller="BoatController">
+        	<p ng-model="simple">{{simple}} </p>
+        	<p ng-model="boatType">{{boatType}} </p>
+        	<p ng-model="sailBoat">{{sailBoat}} </p>
+        	<p>{{getNine()}} </p>
+        </div>
+        <div ng-controller="TrainController">
+        	<p ng-model="simple">{{simple}} </p>
+        	<p ng-model="trainType">{{trainType}} </p>
+        	<p ng-model="santafeDescription">{{santafeDescription}} </p>
+        	<p>{{getNine()}} </p>
+        </div>
+    </body>
+</html>
