@@ -2,7 +2,8 @@
  * @author John Pennock
  */
 
-function diceController($scope) {
+angular.module('appDice', [])
+.controller('diceController', function($scope) {
     $scope.hintD6 = "1D6";
     $scope.totalD6 = 0;
     $scope.rollD6 = function () {
@@ -58,22 +59,22 @@ function diceController($scope) {
     	$scope.arbRolls = rollDice($scope.arbNumDice, $scope.arbFaces);
     	$scope.arbTotal = $scope.arbRolls.shift();
     };
-}
 
-function rollDie(maxDie) {
-	return(Math.floor(Math.random() * maxDie) + 1);
-}
-
-function rollDice(numOfDice, maxOfDie) {
-	var rolls = [];
-	var total = 0;
-	for(var i = 0; i < numOfDice; i++) {
-		rolls.push(rollDie(maxOfDie));
-		total += rolls[i];  
+	function rollDie(maxDie) {
+		return(Math.floor(Math.random() * maxDie) + 1);
 	}
 	
-	rolls.unshift(total);
-	return(rolls);
-}
+	function rollDice(numOfDice, maxOfDie) {
+		var rolls = [];
+		var total = 0;
+		for(var i = 0; i < numOfDice; i++) {
+			rolls.push(rollDie(maxOfDie));
+			total += rolls[i];  
+		}
+		
+		rolls.unshift(total);
+		return(rolls);
+	}
+});
 
 
