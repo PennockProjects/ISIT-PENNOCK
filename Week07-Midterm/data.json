@@ -1,0 +1,8 @@
+{
+	"name": "Imperial JSON Cruiser",
+	"hitPoints": 12,
+    "damage": 0,
+	"armorClass": 9,
+	"attackBonus": 4,
+	"damageBonus": 1
+}
