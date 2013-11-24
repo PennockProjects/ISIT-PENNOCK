@@ -48,6 +48,8 @@ Crafty.c('PlayerCharacter', {
             }
         });
         
+         this.bind('youLose', function() { Crafty.scene('Failure'); });
+        
         this.bind('goLeft', function() {
             // this.trigger('NewDirection', {x: 1, y: 0});
             this._movement.x = this._movement.x - 0.2;
@@ -80,8 +82,6 @@ Crafty.c('PlayerCharacter', {
         }
     },
 
-    
-    
     // Respond to this player visiting a village
     visitVillage: function(data) { 'use strict';
         this.stopMovement();

@@ -7,7 +7,7 @@
 angular.module('characters', ['planetMod'])
 .factory('people', function($http, planets) {'use strict';
 
-	var peopleObj = {
+	var playerHandbook = {
 
 		races : [{
 			name : 'Dwarves',
@@ -89,7 +89,7 @@ angular.module('characters', ['planetMod'])
 		},
 
 		tower : function() {
-			var towerObj = {
+			var rebelPlanet = {
 				name: "Default Tower Name",
 				hitPoints: 4,
 				damage: 0,
@@ -107,12 +107,12 @@ angular.module('characters', ['planetMod'])
 			planets.query({}, function(planets) {
 				console.log("num of planets: " + planets.length);
 				for (var i = 0; i < planets.length; i++) {
-					towerObj.name = planets[i].name;
-					towerObj.hitPoints = planets[i].hitPoints;
-					towerObj.damage = planets[i].damage;
-					towerObj.armorClass = planets[i].armorClass;
-					towerObj.attackBonus = planets[i].attackBonus;
-					towerObj.damageBonus = planets[i].damageBonus;
+					rebelPlanet.name = planets[i].name;
+					rebelPlanet.hitPoints = planets[i].hitPoints;
+					rebelPlanet.damage = planets[i].damage;
+					rebelPlanet.armorClass = planets[i].armorClass;
+					rebelPlanet.attackBonus = planets[i].attackBonus;
+					rebelPlanet.damageBonus = planets[i].damageBonus;
 					
 					console.log("Planet #" + i + " name: " + planets[i].name);
 					console.log("planet damage:" + planets[i].damage);
@@ -122,19 +122,19 @@ angular.module('characters', ['planetMod'])
 				}
 			});
 
-			return towerObj;
+			return rebelPlanet;
 		}
 	};
 
 	
 	$http.get('/data.json').success(function(data, status, headers, config) {
-		peopleObj.hero.name = data.name;
-		peopleObj.hero.hitPoints = data.hitPoints;
-		peopleObj.hero.damage = data.damage;
-		peopleObj.hero.armorClass = data.armorClass;
-		peopleObj.hero.attackBonus = data.attackBonus;
-		peopleObj.hero.damageBonus = data.damageBonus;
-		peopleObj.hero.jsonData = data;
+		playerHandbook.hero.name = data.name;
+		playerHandbook.hero.hitPoints = data.hitPoints;
+		playerHandbook.hero.damage = data.damage;
+		playerHandbook.hero.armorClass = data.armorClass;
+		playerHandbook.hero.attackBonus = data.attackBonus;
+		playerHandbook.hero.damageBonus = data.damageBonus;
+		playerHandbook.hero.jsonData = data;
 		// update the angular view scope
 		angular.element(document.getElementById('textDisplay')).scope().name = data.name;
 		angular.element(document.getElementById('textDisplay')).scope().armorClass = data.armorClass;
@@ -146,7 +146,7 @@ angular.module('characters', ['planetMod'])
 		throw new Error('Oh no! An Error!');
 	});
 
-	return (peopleObj);
+	return (playerHandbook);
 });
 
 angular.module('planetMod', ['ngResource']).factory('planets', function($resource) {

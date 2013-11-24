@@ -53,9 +53,9 @@ angular.module('elfPlayer', ['elfGameMod'])
 //		});
 
 	$scope.name = "Imperial Default Cruiser";
-	$scope.armorClass = 11;
-	$scope.hitPoints = 22;
-	$scope.damage = 33;
+	$scope.armorClass = 10;
+	$scope.hitPoints = 20;
+	$scope.damage = 0;
 	$scope.eventNote = "no reports";
 	$scope.crazyFoo = "";
 	$scope.debugMessages = [];

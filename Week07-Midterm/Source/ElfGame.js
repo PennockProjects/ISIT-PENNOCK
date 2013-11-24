@@ -65,9 +65,10 @@ angular.module('elfGameMod', ['characters'])
 				gameEventService.debugBroadcast(result);
 			}
 			
-			gameEventService.debugBroadcast("Planet: " + (village.tower.hitPoints-village.tower.damage) + " hp, Cruiser: " + (people.hero.hitPoints-people.hero.damage) + " hp");
+			gameEventService.debugBroadcast("Planet: " + (village.tower.hitPoints-village.tower.damage) + " hp left, Cruiser: " + (people.hero.hitPoints-people.hero.damage) + " hp left");
 			if (people.hero.hitPoints-people.hero.damage <= 0) {
-				gameEventService.encounterBroadcast("You're dead!");
+				gameEventService.encounterBroadcast("You Lose!");
+				Crafty.trigger("youLose", Crafty);
 			} else {
 				gameEventService.encounterBroadcast('You can continue to fight');
 			}
@@ -86,12 +87,20 @@ angular.module('elfGameMod', ['characters'])
             {
             	people.hero.damage -= 1;
 				angular.element(document.getElementById('textDisplay')).scope().damage = people.hero.damage;
-  	 	        gameEventService.debugBroadcast('damaged healed by 1 pt.');
+  	 	        gameEventService.debugBroadcast('damage healed by 1 pt.');
 	            gameEventService.encounterBroadcast('R&R at the starbase! damage healed by 1');
             } else {
             	gameEventService.encounterBroadcast("You're at full health why stop for R&R?");
             }
             return true;
+        },
+        
+        newHero : function() {
+        	people.hero.damage = 0;
+			angular.element(document.getElementById('textDisplay')).scope().name = people.hero.name;
+			angular.element(document.getElementById('textDisplay')).scope().armorClass = people.hero.armorClass;
+			angular.element(document.getElementById('textDisplay')).scope().hitPoints = people.hero.hitPoints;
+			angular.element(document.getElementById('textDisplay')).scope().damage = people.hero.damage;
         },
         
 		newVillage : function(village) {

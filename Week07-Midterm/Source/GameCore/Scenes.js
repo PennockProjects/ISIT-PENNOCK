@@ -19,6 +19,7 @@ Crafty.scene('Game', function() { 'use strict';
 	// Player character, placed at 5, 5 on our grid
 	this.player = Crafty.e('PlayerCharacter').at(5, 5);
 	this.gameBoard[this.player.at().x][this.player.at().y] = true;
+	Crafty.game.newHero();
 
 	// Place a tree at every edge square on our grid of 16x16 tiles
 	for (var x = 0; x < Crafty.game.map_grid.width; x++) {
@@ -44,18 +45,22 @@ Crafty.scene('Game', function() { 'use strict';
     
 	// Generate up to five villages on the map in random locations
 	var max_villages = 5;
-	for (var col = 0; col < Crafty.game.map_grid.width; col++) {
-		for (var row = 0; row < Crafty.game.map_grid.height; row++) {
-			if (Math.random() < 0.02) {
-				if (Crafty('Village').length < max_villages && !this.gameBoard[col][row]) {
-					var village = Crafty.e('Village').at(col, row);
-					village.setName(village._entityName.replace('Entity', 'Planet'));
-					Crafty.game.newVillage(village);
+	var villagesCreated = 0;
+	
+	do {
+		for (var col = 0; col < Crafty.game.map_grid.width; col++) {
+			for (var row = 0; row < Crafty.game.map_grid.height; row++) {
+				if (Math.random() < 0.02) {
+					if (Crafty('Village').length < max_villages && !this.gameBoard[col][row]) {
+						villagesCreated++;
+						var village = Crafty.e('Village').at(col, row);
+						village.setName(village._entityName.replace('Entity', 'Planet'));
+						Crafty.game.newVillage(village);
+					}
 				}
 			}
 		}
-	}
-	
+	} while (villagesCreated === 0);
 	
 
 	// Show the victory screen once all villages are visisted
@@ -98,8 +103,8 @@ Crafty.scene('Victory', function() { 'use strict';
 
 });
 
-// Victory scene : Announce victory, set up a new game
-Crafty.scene('Death', function() { 'use strict';
+// Loser scene : set up new game
+Crafty.scene('Failure', function() { 'use strict';
 	// Display some text in celebration of the victory
 	Crafty.e('2D, DOM, Text')
 		.attr({ x: 0, y: 0 })
