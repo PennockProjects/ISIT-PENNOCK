@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="lib/angular.js"></script>
+    <script src="circle.js"></script>
+    <script src="triangle.js"></script>   
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div ng-controller="AddController">
+      <h2>Angular Calculator</h2>
+      <div class="result">
+      {{operandA}} + {{operandB}} = {{func()}}
+      </div>
+      <p>Enter two numbers that you want to add together in the input controls below.</p>
+      <table>
+       <tr><td>OperandA</td><td>OperandB</td></tr>
+       <tr>
+         <td><input type="number" ng-pattern="/\d+/" step="1" min="0" ng-model="operandA" required ></td>
+         <td><input type="number" ng-pattern="/\d+/" ng-model="operandB" required ></td>
+       </tr>
+      </table>
+      
+      <h2>Angular Circle</h2>
+      <div class="result">
+      A circle with {{circleRadius}} radius has an area of {{circleArea()}} and circumference of {{circleCircumference()}}      
+      </div>
+      <p>Enter a radius</p>
+      <table>
+       <tr>
+       	<td><label>Radius:</label> <input type="number" ng-pattern="/\d+/" step="1" min="0" ng-model="circleRadius" required ></td>
+       </tr>
+      </table>
+
+      <h2>Angular Triangle</h2>
+      <div class="result">
+      A triangle with a A side of {{triangleSideA}} and a B side of {{triangleSideB}} has a C side of {{trianglePythagorasC()}}
+      </div>
+      <p>Enter two numbers that you want to add together in the input controls below.</p>
+      <table>
+       <tr><td>triangleA</td><td>triangleB</td></tr>
+       <tr>
+         <td><input type="number" ng-pattern="/\d+/" step="1" min="0" ng-model="triangleSideA" required ></td>
+         <td><input type="number" ng-pattern="/\d+/" ng-model="triangleSideB" required ></td>
+       </tr>
+      </table>
+      
+      
+    </div>
+  </body>
+</html>
