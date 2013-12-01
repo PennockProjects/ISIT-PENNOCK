@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2013-12-01T08:21:10" id="0" hostname="John-S9Laptop" tests="10" errors="0" failures="0" time="0.047">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36"/>
+    </properties>
+    <testcase name="Music Library Length is 5" time="0.016" classname="Chrome 31.0.1650 (Windows 7).music test"/>
+    <testcase name="getMusicianFromAlbum works" time="0.015" classname="Chrome 31.0.1650 (Windows 7).music test"/>
+    <testcase name="getMusicianFromAlbum for unknwon returns null" time="0" classname="Chrome 31.0.1650 (Windows 7).music test"/>
+    <testcase name="getAlbumFromMusician works" time="0" classname="Chrome 31.0.1650 (Windows 7).music test"/>
+    <testcase name="getAlbumFromMusician for unknown returns null" time="0" classname="Chrome 31.0.1650 (Windows 7).music test"/>
+    <testcase name="Book Library Length is 5" time="0" classname="Chrome 31.0.1650 (Windows 7).book test"/>
+    <testcase name="getAuthorFromBook works" time="0" classname="Chrome 31.0.1650 (Windows 7).book test"/>
+    <testcase name="getAuthorFromBook for unknwon returns null" time="0" classname="Chrome 31.0.1650 (Windows 7).book test"/>
+    <testcase name="ggetBookFromAuthor works" time="0" classname="Chrome 31.0.1650 (Windows 7).book test"/>
+    <testcase name="getBookFromAuthor for unknown returns null" time="0.016" classname="Chrome 31.0.1650 (Windows 7).book test"/>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
