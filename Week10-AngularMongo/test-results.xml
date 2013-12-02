@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2013-12-02T07:08:11" id="0" hostname="John-S9Laptop" tests="6" errors="0" failures="0" time="0.078">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36"/>
+    </properties>
+    <testcase name="Check Name" time="0.031" classname="Chrome 31.0.1650 (Windows 7).Test Main Music Controller"/>
+    <testcase name="Check Name" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test Main Book Controller"/>
+    <testcase name="Test music controller name" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Music Tests"/>
+    <testcase name="Test Mock Mongo Music call" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Mongo Music Tests"/>
+    <testcase name="Test book controller name" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Book Tests"/>
+    <testcase name="Test Mock Mongo Book call" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Mongo Book Tests"/>
+    <system-out><![CDATA[Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Albums factory called',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Books factory called',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Albums factory called',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Albums factory called',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 2,Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Books factory called',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Books factory called',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 2
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
