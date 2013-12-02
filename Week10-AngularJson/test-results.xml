@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2013-12-02T04:03:44" id="0" hostname="John-S9Laptop" tests="12" errors="0" failures="0" time="0.063">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36"/>
+    </properties>
+    <testcase name="Test load json name" time="0.031" classname="Chrome 31.0.1650 (Windows 7).Music_js json loader tests"/>
+    <testcase name="Music Library Length is 1" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Music_js json loader tests"/>
+    <testcase name="getMusicianFromAlbum works" time="0" classname="Chrome 31.0.1650 (Windows 7).Music_js json loader tests"/>
+    <testcase name="getMusicianFromAlbum for unknwon returns null" time="0" classname="Chrome 31.0.1650 (Windows 7).Music_js json loader tests"/>
+    <testcase name="getAlbumFromMusician works" time="0" classname="Chrome 31.0.1650 (Windows 7).Music_js json loader tests"/>
+    <testcase name="getAlbumFromMusician for unknown returns null" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Music_js json loader tests"/>
+    <testcase name="Test load json name" time="0" classname="Chrome 31.0.1650 (Windows 7).Book_js json loader tests"/>
+    <testcase name="Book Library Length is 1" time="0" classname="Chrome 31.0.1650 (Windows 7).Book_js json loader tests"/>
+    <testcase name="getAuthorFromBook works" time="0" classname="Chrome 31.0.1650 (Windows 7).Book_js json loader tests"/>
+    <testcase name="getAuthorFromBook for unknwon returns null" time="0" classname="Chrome 31.0.1650 (Windows 7).Book_js json loader tests"/>
+    <testcase name="getBookFromAuthor works" time="0" classname="Chrome 31.0.1650 (Windows 7).Book_js json loader tests"/>
+    <testcase name="getBookFromAuthor for unknown returns null" time="0" classname="Chrome 31.0.1650 (Windows 7).Book_js json loader tests"/>
+    <system-out><![CDATA[Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read musicdata.json! [{"musician":"Elvis Presley","album":"The Classic Christmas Album"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read musicdata.json! [{"musician":"Elvis Presley","album":"The Classic Christmas Album"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read musicdata.json! [{"musician":"Elvis Presley","album":"The Classic Christmas Album"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read musicdata.json! [{"musician":"Elvis Presley","album":"The Classic Christmas Album"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read bookdata.json! [{"author":"Suzanne Collins","book":"Catching Fire"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read bookdata.json! [{"author":"Suzanne Collins","book":"Catching Fire"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read bookdata.json! [{"author":"Suzanne Collins","book":"Catching Fire"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read bookdata.json! [{"author":"Suzanne Collins","book":"Catching Fire"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read bookdata.json! [{"author":"Suzanne Collins","book":"Catching Fire"}]',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Read bookdata.json! [{"author":"Suzanne Collins","book":"Catching Fire"}]'
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>

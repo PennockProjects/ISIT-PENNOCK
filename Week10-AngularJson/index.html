@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+  	<title>Pennock-Week10-AngularJson</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="angular.js"></script>
+    <script src="Music.js"></script>
+    <script src="Book.js"></script>    
+    <script src="index.js"></script>
+  </head>
+  <body>
+
+  <h1>Pennock-Week10-AngularJson</h1>
+
+    <span class="caption">Search all fields: </span> <input ng-model="search.$"> <br>
+    <span class="caption">Search musician: </span> <input ng-model="search.musician"><br>
+    <span class="caption">Search album: </span> <input ng-model="search.album"><br>
+    <span class="caption">Search author: </span> <input ng-model="search.author"><br>
+    <span class="caption">Search book: </span> <input ng-model="search.book"><br>
+    
+    <hr />
+        
+  	<div ng-controller="MusicController">
+        <button ng-click='musicLibrary.getMusicDataFromServer()'>Load Music Data</button>
+
+		<p>The data below is retrieved from <strong>musicdata.json</strong> from the node server</p>
+
+	    <table id="jsonMusic">
+	      <tr><th>Musician</th><th>Album</th></tr>
+	      <tr ng-repeat="album in musicLibrary.library | filter:search:strict">
+	        <td>{{album.musician}}</td>
+	        <td>{{album.album}}</td>
+	      </tr>
+	    </table>
+  	</div>
+  	
+  	<hr />
+	    
+    <div ng-controller="BookController">
+        <button ng-click='bookLibrary.getBookDataFromServer()'>Load Book Data</button>
+		<p>The data below is retrieved from <strong>bookdata.json</strong> from the node server</p>
+   	    <table id="jsonBooks">
+	      <tr><th>Author</th><th>Book</th></tr>
+	      <tr ng-repeat="book in bookLibrary.library | filter:search:strict">
+	        <td>{{book.author}}</td>
+	        <td>{{book.book}}</td>
+	      </tr>
+	    </table>
+    </div>
+
+  </body>
+</html>
