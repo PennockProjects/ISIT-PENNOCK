@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2013-12-12T07:52:47" id="0" hostname="John-S9Laptop" tests="45" errors="0" failures="0" time="0.188">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"/>
+    </properties>
+    <testcase name="Change Direction Broadcast" time="0.047" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Test Two Direction Broadcasts" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Change Tower Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Tests a Debug Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Two Debug Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Tests Encounter Broadcast" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="can get data" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can get planet mongo name" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can get planet mongo name with only planet data" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can get cruiser mongo name" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can get cruiser mongo name ONLY" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can survive garbage return" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="Can create gameEventService" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="gets the width of the playing field" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="gets the height of the playing field" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="rolls the D3" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="new hero has no damage" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="registers a new village with the villages array" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="simulates an encounter" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="simulates an encounter tower end" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="simulates a food encounter" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="reports an event" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="sends a change direction message" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="sends a change direction message to elfcontroller" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="sends a debug message" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="sends a debug message to elfcontroller" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="sends three debug messages to elfcontroller" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="is a very silly test" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="Check Name" time="0" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
+    <testcase name="Check Event Note" time="0" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
+    <testcase name="Check Debug Messages" time="0.016" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
+    <testcase name="Check move Messages" time="0" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
+    <testcase name="TestGameBoard Check ElfGame Width" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
+    <testcase name="can get a hero object" time="0" classname="Chrome 31.0.1650 (Windows 7).Test hero"/>
+    <testcase name="cruiser has all the default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).Test hero"/>
+    <testcase name="can get a planet object" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="planet has default name" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="planet has default hitPoints" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="planet has default damage" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="planet has default armorClass" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="planet has default attackBonus" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="planet has default damageBonus" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="can get a race" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
+    <testcase name="can get a dwarf" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
+    <testcase name="can find halflings" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
+    <system-out><![CDATA[Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Getting ready to call the database',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'characterGameData Factory: looking for Mongo data',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'result: {"mongoData":null,"cruiser":{"name":"Imperial Default Cruiser","hitPoints":12,"damage":0,"armorClass":9,"attackBonus":4,"damageBonus":1,"jsonData":null,"mongoData":null},"planet":{"name":"Default Planet","hitPoints":4,"damage":0,"armorClass":7,"attackBonus":1,"damageBonus":1,"jsonData":null,"mongoData":null}}',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Recievied mongoCharacters number : 2',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Mongo Planet #0',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet hitPoints:11',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet damage:22',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet ac:33',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet attack bonus:44',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet damage bonus:55',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Mongo Cruiser #1',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser hitPoints:66',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser damage:55',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser ac:44',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser attack bonus:33',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser damage bonus:22',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Getting ready to call the database',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'characterGameData Factory: looking for Mongo data',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'result: {"mongoData":null,"cruiser":{"name":"Imperial Default Cruiser","hitPoints":12,"damage":0,"armorClass":9,"attackBonus":4,"damageBonus":1,"jsonData":null,"mongoData":null},"planet":{"name":"Default Planet","hitPoints":4,"damage":0,"armorClass":7,"attackBonus":1,"damageBonus":1,"jsonData":null,"mongoData":null}}',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Recievied mongoCharacters number : 1',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Mongo Planet #0',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet hitPoints:11',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet damage:22',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet ac:33',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet attack bonus:44',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet damage bonus:55',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Getting ready to call the database',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'characterGameData Factory: looking for Mongo data',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'result: {"mongoData":null,"cruiser":{"name":"Imperial Default Cruiser","hitPoints":12,"damage":0,"armorClass":9,"attackBonus":4,"damageBonus":1,"jsonData":null,"mongoData":null},"planet":{"name":"Default Planet","hitPoints":4,"damage":0,"armorClass":7,"attackBonus":1,"damageBonus":1,"jsonData":null,"mongoData":null}}',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Recievied mongoCharacters number : 2',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Mongo Planet #0',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet hitPoints:11',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet damage:22',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet ac:33',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet attack bonus:44',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'planet damage bonus:55',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Mongo Cruiser #1',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser hitPoints:66',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser damage:55',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser ac:44',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser attack bonus:33',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser damage bonus:22',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Getting ready to call the database',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'characterGameData Factory: looking for Mongo data',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'result: {"mongoData":null,"cruiser":{"name":"Imperial Default Cruiser","hitPoints":12,"damage":0,"armorClass":9,"attackBonus":4,"damageBonus":1,"jsonData":null,"mongoData":null},"planet":{"name":"Default Planet","hitPoints":4,"damage":0,"armorClass":7,"attackBonus":1,"damageBonus":1,"jsonData":null,"mongoData":null}}',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Recievied mongoCharacters number : 1',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Mongo Cruiser #0',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser hitPoints:66',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser damage:55',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser ac:44',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser attack bonus:33',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'cruiser damage bonus:22',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Getting ready to call the database',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'characterGameData Factory: looking for Mongo data',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'result: {"mongoData":null,"cruiser":{"name":"Imperial Default Cruiser","hitPoints":12,"damage":0,"armorClass":9,"attackBonus":4,"damageBonus":1,"jsonData":null,"mongoData":null},"planet":{"name":"Default Planet","hitPoints":4,"damage":0,"armorClass":7,"attackBonus":1,"damageBonus":1,"jsonData":null,"mongoData":null}}',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Recievied mongoCharacters number : 1',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Unknown Character Type undefined'
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>

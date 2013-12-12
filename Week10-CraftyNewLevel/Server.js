@@ -81,6 +81,7 @@ function loadContent(request, response) {
 	}  else if (getExtension(path) === 'json') {
 		findFile(__dirname, path.replace('\/', ''), function(err, results) {
 			var javaScript = fs.readFileSync(results[0]);
+			console.log('json found: ' + JSON.stringify(javaScript));
 			response.writeHead(200, {'Content-Type': 'text/javascript'});
 			response.write(javaScript);
 		response.end();
@@ -115,7 +116,7 @@ function loadContent(request, response) {
 				}
 				else{
 					console.log("MP3 loaded");
-					response.writeHeader(200, {"Content-Type": "image/png"});
+					response.writeHeader(200, {"Content-Type": "audio/mp3"});
 					response.write(file, "binary");
 					response.end();
 				}
