@@ -4,14 +4,14 @@
 /* jshint browser: true, devel: true, node: true, unused: true */
 
 var AWS = require('aws-sdk');
-AWS.config.loadFromPath('/src/Config/config.json');
+var config = AWS.config.loadFromPath('/Dev/Config/config.json');
 var s3 = new AWS.S3();
 var fs = require('fs');
 var walk = require('walk');
 
-var bucketName = 'bucket02.elvenware.com';
+var bucketName = 'isitgames.pennockprojects.com';
 
-function listBuckets(s3) { 'use strict';
+function listBuckets(s3) {
 	console.log("calling listBuckets");
 	s3.client.listBuckets(function(err, data) {
 		if (err) {
@@ -25,10 +25,10 @@ function listBuckets(s3) { 'use strict';
 	});
 }
 
-function writeFile(localFileName, nameOnS3, binary) { 'use strict';
+function writeFile(localFileName, nameOnS3, binary) {
 	// Read in the file, convert it to base64, store to S3
 	
-	nameOnS3 = "Crafty06" + nameOnS3;
+	nameOnS3 = "QuellFinal" + nameOnS3;
 	
 	fs.readFile(localFileName, function(err, data) {
 		if (err) {
@@ -86,7 +86,7 @@ function writeFile(localFileName, nameOnS3, binary) { 'use strict';
 	});
 }
 
-function walkDirs(folderName) { 'use strict';
+function walkDirs(folderName) {
 	var options = {
 		followLinks : false,
 	};
@@ -120,7 +120,7 @@ function walkDirs(folderName) { 'use strict';
 		var pieces = root.split('/');
 		var s3Dir = "";
 		for (var i = 0; i < pieces.length; i++) {
-			s3Dir += "/" + pieces[i];				
+			s3Dir += "/" + pieces[i];
 		}		
 		var s3Name = s3Dir + '/' + fileStats.name;
 		console.log(s3Name);
