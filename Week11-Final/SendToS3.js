@@ -11,7 +11,7 @@ var walk = require('walk');
 
 var bucketName = 'isitgames.pennockprojects.com';
 
-function listBuckets(s3) {
+function listBuckets(s3) {'use strict';
 	console.log("calling listBuckets");
 	s3.client.listBuckets(function(err, data) {
 		if (err) {
@@ -25,11 +25,11 @@ function listBuckets(s3) {
 	});
 }
 
-function writeFile(localFileName, nameOnS3, binary) {
+function writeFile(localFileName, nameOnS3, binary) {'use strict';
 	// Read in the file, convert it to base64, store to S3
-	
+
 	nameOnS3 = "QuellFinal" + nameOnS3;
-	
+
 	fs.readFile(localFileName, function(err, data) {
 		if (err) {
 			throw err;
@@ -39,16 +39,16 @@ function writeFile(localFileName, nameOnS3, binary) {
 			console.log("Making binary");
 			data = new Buffer(data, 'binary').toString('base64');
 		}
-		
+
 		var ext = localFileName.split('.').pop();
-		
+
 		var contentType = 'text/html';
 		switch(ext) {
 			case 'db':
 				return;
-				
+
 			case 'htm':
-			case 'html': 
+			case 'html':
 				break;
 			case 'js':
 				contentType = 'application/x-javascript';
@@ -71,11 +71,11 @@ function writeFile(localFileName, nameOnS3, binary) {
 		}
 
 		s3.client.putObject({
-			ACL: 'public-read',
+			ACL : 'public-read',
 			Bucket : bucketName,
 			Key : nameOnS3,
 			Body : data,
-			ContentType: contentType
+			ContentType : contentType
 		}, function(err, response) {
 			if (err) {
 				console.log("Error: " + err);
@@ -86,13 +86,12 @@ function writeFile(localFileName, nameOnS3, binary) {
 	});
 }
 
-function walkDirs(folderName) {
+function walkDirs(folderName) {'use strict';
 	var options = {
 		followLinks : false,
 	};
 
 	var walker = walk.walk(folderName, options);
-
 
 	walker.on("names", function(root, nodeNamesArray) {
 		nodeNamesArray.sort(function(a, b) {
@@ -109,7 +108,7 @@ function walkDirs(folderName) {
 		// * type
 		// * error
 		// * name
-		if (typeof dirStatsArray != 'undefined') 
+		if ( typeof dirStatsArray != 'undefined')
 			console.log("Directories: " + dirStatsArray.type);
 		next();
 	});
@@ -121,11 +120,11 @@ function walkDirs(folderName) {
 		var s3Dir = "";
 		for (var i = 0; i < pieces.length; i++) {
 			s3Dir += "/" + pieces[i];
-		}		
+		}
 		var s3Name = s3Dir + '/' + fileStats.name;
 		console.log(s3Name);
 		// console.log("s3Name: " + s3Name);
-		
+
 		writeFile(fileName, s3Name, false);
 		next();
 	});
