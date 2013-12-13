@@ -10,6 +10,8 @@ angular.module('elfGameMod', ['characterMod', 'gameWrapMod'])
 		map_grid : null,
 
 		misses : 0,
+		
+		currentLevel: 0,
 
 		defaultMapGrid : {
 			width : 18,
@@ -19,6 +21,8 @@ angular.module('elfGameMod', ['characterMod', 'gameWrapMod'])
 				height : 32
 			}
 		},
+		
+		gameBoards: people.boards,
 
 		villages : [],
 

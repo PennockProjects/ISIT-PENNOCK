@@ -58,6 +58,8 @@ angular.module('elfPlayer', ['elfGameMod'])
 	$scope.crazyFoo = "";
 	$scope.debugMessages = [];
 	$scope.moveMessages = [];
+	$scope.level = 0;
+	$scope.levelType = "Training Level ";
 	
 	elfGameService.start();
 

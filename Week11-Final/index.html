@@ -16,8 +16,11 @@
 	<script src="Source/GameWrapper.js"></script>
 	<script src="Source/Characters/CharacterData.js"></script>
 	<script src="Source/Characters/Characters.js"></script>
+	<script src="Source/Characters/GameBoard.js"></script>
 	<script src="Source/Characters/Hero.js"></script>
 	<script src="Source/Characters/planet.js"></script>
+	<script src="Source/Characters/Races.js"></script>
+	<script src="Source/Characters/Classes.js"></script>
 	<script src="Source/ElfGame.js"></script>
 	<script src="Source/ElfPlayer.js"></script>	
 			      
@@ -29,6 +32,7 @@
     
     <div id="textDisplay" ng-controller="ElfController">
         <p>Quell the Rebellion Final</p>
+        <p>{{levelType}} {{level+1}}</p>
         <p>{{name}}</p>
         <h2>Armor Left {{hitPoints-damage}}</h2>
         <p>ac: {{armorClass}} hit points: {{hitPoints}} damage: {{damage}}</p>

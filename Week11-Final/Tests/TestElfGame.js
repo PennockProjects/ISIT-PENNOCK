@@ -87,10 +87,26 @@
 	});
 	
 	it("simulates a food encounter", function() {
-		var actual = elfGameService.encounterFood({ }, 0);
+		var actual = elfGameService.encounterFood({});
 		expect(actual).toBe(true);
 	});
 	
+	it("simulates an food heal", function() {
+		var testCharacter = character.hero;
+		// make tower have a bunch of hit points
+		testCharacter.damage = 25;
+		elfGameService.encounterFood({});
+		expect(testCharacter.damage).toBe(24);
+	});
+	
+	it("simulates an food no heal", function() {
+		var testCharacter = character.hero;
+		// make tower have a bunch of hit points
+		testCharacter.damage = 0;
+		elfGameService.encounterFood({});
+		expect(testCharacter.damage).toBe(0);
+	});
+
 	it("reports an event", function() {
 		var actual = elfGameService.reportEvent();
 		expect(actual).toEqual(true);

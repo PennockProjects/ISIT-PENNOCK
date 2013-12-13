@@ -46,7 +46,54 @@ angular.module('characterDataMod', ['ngResource'])
 				attackDamage : function() {
 					return Math.floor(Math.random() * 4) + this.damageBonus;
 				}
-			}
+			}, 
+			boards: [
+		
+				// Level 1
+
+				[	[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 4, 0, 3, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 3, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1 ],
+					[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]],
+
+					// Level 2
+
+				[	[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 4, 4, 0, 0, 3, 0, 0, 0, 2, 2, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 4, 4, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 3, 0, 3, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]],
+
+					// Level 3
+
+				[	[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1 ],
+					[ 1, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 2 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 ],
+					[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]]
+			]
 		};
 	
 		
@@ -110,6 +157,18 @@ angular.module('characterDataMod', ['ngResource'])
 								angular.element(document.getElementById('textDisplay')).scope().hitPoints = gameData.cruiser.hitPoints;
 								angular.element(document.getElementById('textDisplay')).scope().damage = gameData.cruiser.damage;
 							}
+							break;
+							
+						case "boards":
+							console.log("Mongo Board #" + i);
+							for(var boardCnt = 0; boardCnt < mongoCharacters[i].boards.length; boardCnt++) {
+								for(var rowCnt = 0; rowCnt < mongoCharacters[i].boards[boardCnt].length; rowCnt++) {
+									for(var colCnt = 0; colCnt < mongoCharacters[i].boards[boardCnt][rowCnt].length; colCnt++) {
+										gameData.boards[boardCnt][rowCnt][colCnt] = mongoCharacters[i].boards[boardCnt][rowCnt][colCnt];
+									}
+								}
+							}
+							// gameData.boards = mongoCharacters[i].boards;
 							break;
 						default:
 							console.log("Unknown Character Type "+ mongoCharacters[i].type);

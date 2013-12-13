@@ -13,16 +13,15 @@ module.exports = function(config) { 'use strict';
       'Library/angular-resource.min.js',
       'Library/angular-mocks.js',
       'Library/Crafty.js',
-      'Source/ElfGame.js',
-      'Source/ElfPlayer.js',
-      'Source/MockGameWrapper.js',
+      'Source/*.js',
       'Source/Characters/*.js',
       'Tests/*.js'
     ],
 
     // list of files to exclude
     exclude: [
-      'Source/JasmineStart.js'
+      'Source/JasmineStart.js',
+      'Srouce/GameWrapper.js'
     ],
 
     preprocessors: {

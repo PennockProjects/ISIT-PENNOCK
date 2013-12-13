@@ -4,46 +4,13 @@
 
 /* global angular:true */
 
-angular.module('characterMod', ['heroMod', 'planetMod']).factory('people', function(hero, planets) {'use strict';
+angular.module('characterMod', ['heroMod', 'planetMod', 'raceMod', 'classMod', 'gameBoardMod']).factory('people', function(hero, planets, races, classes, gameBoards) {'use strict';
 
 	return {
-
-		classes : [{
-			name : 'Cleric',
-			armor : 'any',
-			hitDie : 6,
-			shield : true,
-			spells : ['none'],
-			weapons : ['club', 'mace', 'maul', 'quarterstaff', 'sling', 'warhammer'],
-			xpForLevelTwo : 1500
-		}, {
-			name : 'Fighter',
-			armor : 'any',
-			hitDie : 8,
-			shield : true,
-			spells : ['none'],
-			weapons : ['Any'],
-			xpForLevelTwo : 2000
-		}, {
-			name : 'Magic-User',
-			armor : 'none',
-			hitDie : 4,
-			shield : false,
-			spells : ['Charm Person', 'Detect Magic', 'Floating Disc', 'Hold Portal', 'Light', 'Magic Missile', 'Magic Mouth', 'Protection from Evil', 'Read Languages', 'Read Magic', 'Shield', 'Sleep', 'Ventriloquism'],
-			weapons : ['cudgel', 'dagger', 'walking staff'],
-			xpForLevelTwo : 2500
-		}, {
-			name : 'Thief',
-			armor : 'leather',
-			hitDie : 4,
-			shield : false,
-			spells : ['none'],
-			weapons : ['any'],
-			xpForLevelTwo : 1250
-		}],
-
+		races: races,
+		classes : classes,
 		hero : hero,
-
+		boards: gameBoards,
 		tower : function(fDebugCallMongo) {
 			return planets(fDebugCallMongo);
 		},
