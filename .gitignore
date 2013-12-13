@@ -1,3 +1,4 @@
+coverage
 node_modules
 .metadata
 .c9revisions
@@ -5,4 +6,4 @@ Archive
 archive
 Thumbs.db
 thumbs.db.elasticbeanstalk/
-.gitignorecoverage
+.gitignore

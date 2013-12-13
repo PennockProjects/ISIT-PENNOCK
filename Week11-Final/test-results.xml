@@ -1,77 +1,77 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2013-12-13T00:41:15" id="0" hostname="John-S9Laptop" tests="75" errors="0" failures="0" time="0.265">
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2013-12-13T00:49:09" id="0" hostname="John-S9Laptop" tests="75" errors="0" failures="0" time="0.234">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36"/>
     </properties>
-    <testcase name="Change Direction Broadcast" time="0.047" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
-    <testcase name="Test Two Direction Broadcasts" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Change Direction Broadcast" time="0.031" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Test Two Direction Broadcasts" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
     <testcase name="Change Tower Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
-    <testcase name="Tests a Debug Broadcast" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Tests a Debug Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
     <testcase name="Two Debug Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
-    <testcase name="Tests Encounter Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Tests Encounter Broadcast" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
     <testcase name="can get data" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
-    <testcase name="can get planet mongo name" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can get planet mongo name" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
     <testcase name="can get planet mongo name with only planet data" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
     <testcase name="can get cruiser mongo name" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
-    <testcase name="can get cruiser mongo name ONLY" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
-    <testcase name="can get gameboard mongo" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
-    <testcase name="can survive garbage return" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can get cruiser mongo name ONLY" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can get gameboard mongo" time="0" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
+    <testcase name="can survive garbage return" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Mongo Db call"/>
     <testcase name="can get a classes object" time="0" classname="Chrome 31.0.1650 (Windows 7).TestClasses"/>
-    <testcase name="can get a cleric name" time="0.016" classname="Chrome 31.0.1650 (Windows 7).TestClasses"/>
+    <testcase name="can get a cleric name" time="0" classname="Chrome 31.0.1650 (Windows 7).TestClasses"/>
     <testcase name="can get a figher and armor" time="0" classname="Chrome 31.0.1650 (Windows 7).TestClasses"/>
     <testcase name="can get a magic-user and shield" time="0" classname="Chrome 31.0.1650 (Windows 7).TestClasses"/>
     <testcase name="can a thief" time="0" classname="Chrome 31.0.1650 (Windows 7).TestClasses"/>
     <testcase name="Can create gameEventService" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="gets the width of the playing field" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="gets the height of the playing field" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
-    <testcase name="rolls the D3" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="rolls the D3" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="new hero has no damage" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
-    <testcase name="registers a new village with the villages array" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
-    <testcase name="simulates an encounter" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="registers a new village with the villages array" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="simulates an encounter" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="simulates an encounter tower end" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="simulates a food encounter" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="simulates an food heal" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="simulates an food no heal" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
-    <testcase name="reports an event" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
-    <testcase name="sends a change direction message" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="reports an event" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="sends a change direction message" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="sends a change direction message to elfcontroller" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
-    <testcase name="sends a debug message" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="sends a debug message" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="sends a debug message to elfcontroller" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="sends three debug messages to elfcontroller" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
-    <testcase name="is a very silly test" time="0" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
+    <testcase name="is a very silly test" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test ElfGame"/>
     <testcase name="Check Name" time="0" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
-    <testcase name="Check Event Note" time="0.016" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
+    <testcase name="Check Event Note" time="0" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
     <testcase name="Check Debug Messages" time="0" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
     <testcase name="Check move Messages" time="0" classname="Chrome 31.0.1650 (Windows 7).TestElfController"/>
     <testcase name="TestGameBoard Check ElfGame Width" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
-    <testcase name="can get a gameBoard object" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
+    <testcase name="can get a gameBoard object" time="0.016" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="has 3 levels" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 1 row has default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
-    <testcase name="board 1 col has default stats" time="0.016" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
+    <testcase name="board 1 col has default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 1 has no values outside of 0-4" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 2 row has default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 2 col has default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
-    <testcase name="board 2 has no values outside of 0-4" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
+    <testcase name="board 2 has no values outside of 0-4" time="0.015" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 3 row has default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
-    <testcase name="board 3 col has default stats" time="0.015" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
+    <testcase name="board 3 col has default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 3 has no values outside of 0-4" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 1, row 5, col 5 has 0" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
-    <testcase name="board 2, row 5, col 5 has 0" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
+    <testcase name="board 2, row 5, col 5 has 0" time="0.016" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="board 3, row 5, col 5 has 0" time="0" classname="Chrome 31.0.1650 (Windows 7).TestGameboard"/>
     <testcase name="can get a hero object" time="0" classname="Chrome 31.0.1650 (Windows 7).Test hero"/>
     <testcase name="cruiser has all the default stats" time="0" classname="Chrome 31.0.1650 (Windows 7).Test hero"/>
-    <testcase name="can get a planet object" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="can get a planet object" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
     <testcase name="planet has default name" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
     <testcase name="planet has default hitPoints" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
     <testcase name="planet has default damage" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
     <testcase name="planet has default armorClass" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
     <testcase name="planet has default attackBonus" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
-    <testcase name="planet has default damageBonus" time="0" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
+    <testcase name="planet has default damageBonus" time="0.016" classname="Chrome 31.0.1650 (Windows 7).Test planets"/>
     <testcase name="can get a race" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
     <testcase name="can get a dwarf" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
     <testcase name="can find halflings" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
-    <testcase name="can find halfling description length" time="0.015" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
+    <testcase name="can find halfling description length" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
     <testcase name="can find halflings hitDie" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
     <testcase name="can find halfling 1st languages" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
     <testcase name="can find halfling 1st class" time="0" classname="Chrome 31.0.1650 (Windows 7).TestRaces"/>
